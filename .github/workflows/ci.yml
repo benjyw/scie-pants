@@ -86,13 +86,14 @@ jobs:
       - name: Unit Tests
         run: cargo test --all
 
-      - name: Setup Python 3.9, 3.10, 3.11
+      - name: Setup Python 3.9, 3.10, 3.11, 3.14
         uses: actions/setup-python@v6
         with:
           python-version: |-
             3.9
             3.10
             3.11
+            3.14
 
       - name: Compute cache key
         id: build_it_cache_key
